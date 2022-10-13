@@ -8,6 +8,7 @@
   "main": "./cjs/index.js",
   "module": "./esm5/index.js",
   "es2015": "./esm2015/index.js",
+  "esnext": "./esnext/index.js",
   "typings": "./types/index.d.ts",
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "build:es2015": "tsc --project tsconfig.prod.esm2015.json",
     "build:esm5": "tsc --project tsconfig.prod.esm5.json",
     "build:cjs": "tsc --project tsconfig.prod.cjs.json",
+    "build:es2020": "tsc --project tsconfig.prop.es2020.json",
     "build:umd": "rollup --config rollup.config.js",
     "build:types": "tsc --project tsconfig.prod.types.json",
     "i18n:extract": "node ./scripts/string-extractor.js",
@@ -42,7 +44,7 @@
     "test:ci": "jest --runInBand --no-cache --coverage --verbose"
   },
   "dependencies": {
-    "libphonenumber-js": "^1.9.43",
+    "libphonenumber-js": "^1.10.14",
     "validator": "^13.7.0"
   },
   "devDependencies": {
@@ -60,7 +62,7 @@
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "lint-staged": "^12.0.3",
-    "po2json": "^0.4.5",
+    "po2json": "^0.3.0",
     "prettier": "^2.2.1",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",

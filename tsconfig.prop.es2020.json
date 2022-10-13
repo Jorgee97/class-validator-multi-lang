@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "module": "ES2020",
+    "outDir": "build/es2020"
+  }
+}
